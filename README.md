@@ -7,7 +7,7 @@
 ## Installation Steps
 
 1. Clone the repository:
-    - git clone [<repository-url>](https://github.com/vkapasia/task.git)
+    - git clone https://github.com/vkapasia/task.git
     - cd task
 2. Install dependencies:
     - composer install
@@ -16,12 +16,13 @@
         cp .env.example .env
     - Configure database credentials and other environment variables in the .env file.
 
-4. Run migrations to set up the database schema:
+4. Generate an application key:
+    - php artisan key:generate
+5. Run migrations to set up the database schema:
     - php artisan migrate
-5. Seed the database
+6. Seed the database
     - php artisan db:seed
-
-6. Start the development server:
+7. Start the development server:
     - php artisan serve
 
 
